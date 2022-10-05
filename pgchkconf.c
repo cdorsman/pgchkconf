@@ -1,4 +1,4 @@
-#include "include/pgchkconf.h"
+#include "pgchkconf.h"
 
 struct config_item 
 {
