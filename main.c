@@ -5,13 +5,8 @@ int main(int argc, char **argv)
 {
     char *file_name;
 
-    // Check if amount of args
-    if((argc < 1) | (argc > 2)) 
-    {
-        return 1;
-    } 
-    // Check if is file
-    else if((access(argv[1], F_OK)) != 0) 
+    // Check amount of args and if it is a file
+    if((argc < 1) | (argc > 2) | (access(argv[1], F_OK) != 0)) 
     {
         return 1;
     } 
